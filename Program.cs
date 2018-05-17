@@ -1,4 +1,6 @@
 ﻿using System;
+using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Hosting;
 
 namespace dotnetconsole
 {
@@ -8,5 +10,7 @@ namespace dotnetconsole
         {
             Console.WriteLine("Hello World!");
         }
+
+        public static IWebHost BuildWebHost(string[] args){return null;}
     }
 }
