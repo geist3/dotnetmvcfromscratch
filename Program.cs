@@ -8,9 +8,13 @@ namespace dotnetconsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Starting!");
+            BuildWebHost(args).Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args){return null;}
+        public static IWebHost BuildWebHost(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>()
+                .Build();
     }
 }
