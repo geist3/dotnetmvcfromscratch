@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/geist3/dotnetmvcfromscratch#readme",
   "devDependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.3"
   }
