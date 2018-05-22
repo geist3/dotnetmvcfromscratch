@@ -8,14 +8,18 @@ module.exports = {
         filename: 'bundle.js'
     },
     module: {
-        rules: [ { test: /\.js?$/,
+        rules: [
+            { test: /\.css$/, use: [{ loader: "style-loader" },
+                                    { loader: "css-loader" }]},
+            { test: /\.js?$/,
         use: { loader: 'babel-loader', options: { presets: ['babel-preset-env']}}}]
     },
     plugins: [
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
-            'windows.jQuery': 'jquery'
+            'windows.jQuery': 'jquery',
+            Popper: ['popper.js', 'default']
         })
     ]
 }
