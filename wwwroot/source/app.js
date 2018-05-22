@@ -1,6 +1,8 @@
 require('./lib');
 import ES6Lib from './es6codelib';
 //setText(document.getElementById("react-app"));
-alert('a');
+//alert('a');
 let myES6Object = new ES6Lib();
-alert(myES6Object.getData());
+//alert(myES6Object.getData());
+
+$('#fillthiswithjquery').html('Filled by Jquery!');
