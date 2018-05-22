@@ -1,4 +1,5 @@
 require('./lib');
+import $ from 'jquery';
 import ES6Lib from './es6codelib';
 //setText(document.getElementById("react-app"));
 //alert('a');
